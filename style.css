@@ -35,6 +35,14 @@ body {
   line-height: 1.5;
   margin-bottom: 4.8rem;
 }
+.btn--form {
+  align-self: end;
+  color: #fae5d3;
+  background-color: #45260a;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -125,6 +133,7 @@ body {
 .grid {
   display: grid;
   gap: 9.6rem;
+  margin-bottom: 4.8rem;
   /* align-items: center; */
 }
 .grid--2-cols {
@@ -133,6 +142,10 @@ body {
 .grid--3-cols {
   grid-template-columns: 1fr 1fr 1fr;
 }
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .section-how {
   padding: 9.6px 0;
   margin-top: 3rem;
@@ -146,7 +159,7 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 5rem;
 }
 .subheading {
   display: block;
@@ -343,4 +356,192 @@ body {
 }
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+/*----------Pricing ---------*/
+.section-pricing {
+  padding: 5rem 0;
+}
+.pricing-plan {
+  border-radius: 11px;
+  padding: 2.8rem;
+  width: 75%;
+}
+.pricing--starter {
+  justify-self: end;
+  border: 2px solid #e67e22;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+.plan-signup {
+  text-align: center;
+  margin-top: 4.2rem;
+}
+.pricing-plan--complete {
+  background-color: #fae5d3;
+}
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+/*Feature-Section-----*/
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+/*------Call to action-----*/
+.section-cta {
+  margin-bottom: 8rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.1rem;
+  height: 50rem;
+}
+.cta .heading-secondary {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+.cta {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.cta-img-box {
+  background-image: url("img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.form-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.form-cta label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.form-cta input {
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+  background-color: #fae5d3;
+  border-radius: 1rem;
+}
+.form-cta select {
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+  background-color: #fae5d3;
+  border-radius: 1rem;
+}
+/* .form-cta button {
+  padding: 1.2rem;
+  background-color: #45260a;
+} */
+/*-----Footer*/
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.footer {
+  padding: 9.6rem 0;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer-links {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.social-links li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.address {
+  margin-bottom: 2rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: 5rem;
 }
